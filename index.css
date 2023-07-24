@@ -1,0 +1,146 @@
+
+html {
+    height: 100vh;
+     }
+
+
+body{
+    background-image: url("Images/tuile.jpg");
+    font-family: 'Ubuntu', sans-serif;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto' , sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+     }
+
+.main-container {
+    width: 500px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+.pokemon-top-part {
+    width: 200px;
+    height: 100px;
+    background: #F22613;
+    margin: 0 auto;
+    border-radius: 200px 200px 0 0;
+    border: 5px solid #333;
+}
+
+.pokemon-bottom-part {
+    position: relative;
+}
+
+.white-part {
+    width: 200px;
+    height: 100px;
+    background: #ffffff;
+    margin: 0 auto;
+    border-radius: 0 0 200px 200px;
+    border: 5px solid #333;
+}
+
+.black-line {
+    width: 210px;
+    height: 25px;
+    background: #333;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.black-line::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-25%);
+}
+
+.black-line::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-2px);
+    z-index: 999;
+}
+
+
+legend{
+    color: blue;
+    font-size: 35px;
+    font-family: arial;
+    text-shadow: 2px 2px greenyellow;
+    border: 5px solid #cf0b0b;
+}
+ 
+tr td:first-child{
+    color: rgb(11, 5, 17);
+    font-size: 25px;
+    font-family: arial;
+    border-radius: 10px 10px;
+}
+ 
+tr td:last-child{
+    font-size: 0px;
+    font-style: italic;
+    color: red;
+    font-family: arial;
+}
+ 
+input{
+    background: aquamarine;
+    border: 2px solid blue;
+    border-radius: 10px 10px;
+}
+input:hover{
+    background: bisque;
+}
+input:focus{
+    background: aliceblue;
+    color: black;
+}
+ 
+
+form input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    outline: none;
+    width: 260px;
+}
+
+fieldset{
+    background-color: #688092;
+    font-size: 70px;
+    border-radius: 25px;
+    color: #970cd8;
+}
+
+
